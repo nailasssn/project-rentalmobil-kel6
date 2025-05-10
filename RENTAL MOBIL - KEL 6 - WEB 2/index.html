@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DB Rental Mobil - Sewa Mobil Berkualitas</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-blue-600">DB Rental Mobil</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+                    <a href="#vehicles" class="text-gray-700 hover:text-blue-600 transition">Kendaraan</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-blue-600 transition">Testimoni</a>
+                    <a href="#booking" class="text-gray-700 hover:text-blue-600 transition">Pesan Sekarang</a>
+                    <a href="#developer" class="text-gray-700 hover:text-blue-600 transition">Pengembang</a>
+                    <a href="login.php" class="text-gray-700 hover:text-blue-600 transition">Login</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-700">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white pb-4 px-4 shadow-lg">
+            <a href="#home" class="block py-2 text-gray-700 hover:text-blue-600 transition">Home</a>
+            <a href="#vehicles" class="block py-2 text-gray-700 hover:text-blue-600 transition">Kendaraan</a>
+            <a href="#testimonials" class="block py-2 text-gray-700 hover:text-blue-600 transition">Testimoni</a>
+            <a href="#booking" class="block py-2 text-gray-700 hover:text-blue-600 transition">Pesan Sekarang</a>
+            <a href="#developer" class="block py-2 text-gray-700 hover:text-blue-600 transition">Pengembang</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="md:w-1/2 animate__animated animate__fadeInLeft">
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">Sewa Mobil Berkualitas dengan Harga
+                        Terbaik</h1>
+                    <p class="text-xl mb-8">Temukan berbagai pilihan mobil terbaik untuk kebutuhan perjalanan Anda.
+                        Layanan profesional dengan armada terawat.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#vehicles"
+                            class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition duration-300 text-center">Lihat
+                            Armada</a>
+                        <a href="#booking"
+                            class="bg-transparent border-2 border-white text-white font-semibold px-6 py-3 rounded-lg hover:bg-white hover:text-blue-600 transition duration-300 text-center">Pesan
+                            Sekarang</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 mt-10 md:mt-0 animate__animated animate__fadeInRight">
+                    <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                        alt="Luxury Car"
+                        class="rounded-lg shadow-2xl transform hover:scale-105 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 animate__animated animate__fadeInUp"
+                    data-wow-delay="0.1s">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">50+</h3>
+                    <p class="text-gray-600">Armada Tersedia</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 animate__animated animate__fadeInUp"
+                    data-wow-delay="0.2s">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">1000+</h3>
+                    <p class="text-gray-600">Pelanggan Puas</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 animate__animated animate__fadeInUp"
+                    data-wow-delay="0.3s">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">4.9/5</h3>
+                    <p class="text-gray-600">Rating Pelanggan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+            <!-- ARMADA -->
+            <!-- Vehicles Section -->
+            <section id="vehicles" class="py-16 bg-gray-50">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-4">Pilihan Armada Kami</h2>
+                        <p class="text-xl text-gray-600 max-w-2xl mx-auto">Temukan mobil yang sesuai dengan kebutuhan
+                            Anda</p>
+
+                        <!-- Filter Kategori -->
+                        <div class="mt-8 flex flex-wrap justify-center gap-4">
+                            <button class="filter-btn active px-4 py-2 rounded-full bg-blue-600 text-white"
+                                data-category="all">Semua</button>
+                            <button
+                                class="filter-btn px-4 py-2 rounded-full bg-white text-gray-700 border border-gray-300 hover:bg-gray-100"
+                                data-category="family" >Keluarga</button>
+                            <button
+                                class="filter-btn px-4 py-2 rounded-full bg-white text-gray-700 border border-gray-300 hover:bg-gray-100"
+                                data-category="suv">SUV</button>
+                            <button
+                                class="filter-btn px-4 py-2 rounded-full bg-white text-gray-700 border border-gray-300 hover:bg-gray-100"
+                                data-category="sedan">Sedan</button>
+                            <button
+                                class="filter-btn px-4 py-2 rounded-full bg-white text-gray-700 border border-gray-300 hover:bg-gray-100"
+                                data-category="luxury">Mewah</button>
+                            <button
+                                class="filter-btn px-4 py-2 rounded-full bg-white text-gray-700 border border-gray-300 hover:bg-gray-100"
+                                data-category="economy">Ekonomi</button>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Vehicle 1 -->
+                        <div class="vehicle-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
+                            data-category="family">
+                            <div class="relative">
+                                <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                                    alt="Toyota Avanza" class="w-full h-48 object-cover">
+                                <div
+                                    class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-2 py-1 rounded">
+                                    TERLARIS
+                                </div>
+                                <div
+                                    class="absolute top-4 right-4 bg-white text-blue-600 text-xs font-bold px-2 py-1 rounded flex items-center">
+                                    <i class="fas fa-gas-pump mr-1"></i> 15-18 km/liter
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 class="text-xl font-bold text-gray-800">Toyota Avanza</h3>
+                                    <span class="bg-blue-100 text-blue-600 text-xs font-semibold px-2 py-1 rounded">B
+                                        1234 ABC</span>
+                                </div>
+
+                                <div class="flex items-center mb-4">
+                                    <div class="flex text-yellow-400 mr-2">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="text-gray-600 text-sm">4.5 (120 review)</span>
+                                </div>
+
+                                <div class="grid grid-cols-2 gap-4 mb-4">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-users text-gray-500 mr-2"></i>
+                                        <span class="text-gray-700">7 Kursi</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-car text-gray-500 mr-2"></i>
+                                        <span class="text-gray-700">Manual</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-snowflake text-gray-500 mr-2"></i>
+                                        <span class="text-gray-700">AC</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-tv text-gray-500 mr-2"></i>
+                                        <span class="text-gray-700">Infotainment</span>
+                                    </div>
+                                </div>
+
+                                <div class="border-t border-gray-200 pt-4 mt-4">
+                                    <div class="flex justify-between items-center">
+                                        <div>
+                                            <span class="text-gray-600 text-sm line-through">Rp450.000</span>
+                                            <div class="text-xl font-bold text-blue-600">Rp350.000<span
+                                                    class="text-sm font-normal text-gray-600">/hari</span></div>
+                                        </div>
+                                        <button
+                                            class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300 rent-btn"
+                                            data-id="1" data-name="Toyota Avanza" data-price="350000">
+                                            Sewa Sekarang
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Vehicle 2 -->
+                        <div class="vehicle-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
+                            data-category="luxury">
+                            <div class="relative">
+                                <img src="https://images.unsplash.com/photo-1547038577-da80abbc4f19?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                                    alt="Honda Civic" class="w-full h-48 object-cover">
+                                <div
+                                    class="absolute top-4 right-4 bg-white text-blue-600 text-xs font-bold px-2 py-1 rounded flex items-center">
+                                    <i class="fas fa-gas-pump mr-1"></i> 12-15 km/liter
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 class="text-xl font-bold text-gray-800">Honda Civic Turbo</h3>
+                                    <span class="bg-blue-100 text-blue-600 text-xs font-semibold px-2 py-1 rounded">B
+                                        5678 DEF</span>
+                                </div>
+
+                                <div class="flex items-center mb-4">
+                                    <div class="flex text-yellow-400 mr-2">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="text-gray-600 text-sm">4.9 (85 review)</span>
+                                </div>
+
+                                <div class="grid grid-cols-2 gap-4 mb-4">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-users text-gray-500 mr-2"></i>
+                                        <span class="text-gray-700">5 Kursi</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-car text-gray-500 mr-2"></i>
+                                        <span class="text-gray-700">Automatic</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-snowflake text-gray-500 mr-2"></i>
+                                        <span class="text-gray-700">Dual AC</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-bluetooth text-gray-500 mr-2"></i>
+                                        <span class="text-gray-700">CarPlay</span>
+                                    </div>
+                                </div>
+
+                                <div class="border-t border-gray-200 pt-4 mt-4">
+                                    <div class="flex justify-between items-center">
+                                        <div>
+                                            <div class="text-xl font-bold text-blue-600">Rp550.000<span
+                                                    class="text-sm font-normal text-gray-600">/hari</span></div>
+                                        </div>
+                                        <button
+                                            class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300 rent-btn"
+                                            data-id="2" data-name="Honda Civic Turbo" data-price="550000">
+                                            Sewa Sekarang
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Vehicle 3 -->
+                        <div class="vehicle-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
+                            data-category="suv">
+                            <div class="relative">
+                                <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                                    alt="Mitsubishi Pajero" class="w-full h-48 object-cover">
+                                <div
+                                    class="absolute top-4 left-4 bg-green-600 text-white text-xs font-bold px-2 py-1 rounded">
+                                    PROMO
+                                </div>
+                                <div
+                                    class="absolute top-4 right-4 bg-white text-blue-600 text-xs font-bold px-2 py-1 rounded flex items-center">
+                                    <i class="fas fa-gas-pump mr-1"></i> 10-12 km/liter
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 class="text-xl font-bold text-gray-800">Mitsubishi Pajero Sport</h3>
+                                    <span class="bg-blue-100 text-blue-600 text-xs font-semibold px-2 py-1 rounded">B
+                                        9012 GHI</span>
+                                </div>
+
+                                <div class="flex items-center mb-4">
+                                    <div class="flex text-yellow-400 mr-2">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="text-gray-600 text-sm">4.2 (64 review)</span>
+                                </div>
+
+                                <div class="grid grid-cols-2 gap-4 mb-4">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-users text-gray-500 mr-2"></i>
+                                        <span class="text-gray-700">7 Kursi</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-car text-gray-500 mr-2"></i>
+                                        <span class="text-gray-700">Automatic</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-snowflake text-gray-500 mr-2"></i>
+                                        <span class="text-gray-700">Dual AC</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-shield-alt text-gray-500 mr-2"></i>
+                                        <span class="text-gray-700">4x4</span>
+                                    </div>
+                                </div>
+
+                                <div class="border-t border-gray-200 pt-4 mt-4">
+                                    <div class="flex justify-between items-center">
+                                        <div>
+                                            <span class="text-gray-600 text-sm line-through">Rp700.000</span>
+                                            <div class="text-xl font-bold text-blue-600">Rp600.000<span
+                                                    class="text-sm font-normal text-gray-600">/hari</span></div>
+                                        </div>
+                                        <button
+                                            class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300 rent-btn"
+                                            data-id="3" data-name="Mitsubishi Pajero Sport" data-price="600000">
+                                            Sewa Sekarang
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Vehicle 4 -->
+                        <div class="vehicle-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
+                            data-category="luxury">
+                            <div class="relative">
+                                <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                                    alt="Toyota Alphard" class="w-full h-48 object-cover">
+                                <div
+                                    class="absolute top-4 right-4 bg-white text-blue-600 text-xs font-bold px-2 py-1 rounded flex items-center">
+                                    <i class="fas fa-gas-pump mr-1"></i> 8-10 km/liter
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 class="text-xl font-bold text-gray-800">Toyota Alphard</h3>
+                                    <span class="bg-blue-100 text-blue-600 text-xs font-semibold px-2 py-1 rounded">B
+                                        3456 JKL</span>
+                                </div>
+
+                                <div class="flex items-center mb-4">
+                                    <div class="flex text-yellow-400 mr-2">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <span class="text-gray-600 text-sm">5.0 (42 review)</span>
+                                </div>
+
+                                <div class="grid grid-cols-2 gap-4 mb-4">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-users text-gray-500 mr-2"></i>
+                                        <span class="text-gray-700">7 Kursi</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-car text-gray-500 mr-2"></i>
+                                        <span class="text-gray-700">Automatic</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-snowflake text-gray-500 mr-2"></i>
+                                        <span class="text-gray-700">Dual AC</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-tv text-gray-500 mr-2"></i>
+                                        <span class="text-gray-700">TV & DVD</span>
+                                    </div>
+                                </div>
+
+                                <div class="border-t border-gray-200 pt-4 mt-4">
+                                    <div class="flex justify-between items-center">
+                                        <div>
+                                            <div class="text-xl font-bold text-blue-600">Rp1.200.000<span
+                                                    class="text-sm font-normal text-gray-600">/hari</span></div>
+                                        </div>
+                                        <button
+                                            class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300 rent-btn"
+                                            data-id="4" data-name="Toyota Alphard" data-price="1200000">
+                                            Sewa Sekarang
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Vehicle 5 -->
+                        <div class="vehicle-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
+                            data-category="economy">
+                            <div class="relative">
+                                <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                                    alt="Daihatsu Ayla" class="w-full h-48 object-cover">
+                                <div
+                                    class="absolute top-4 right-4 bg-white text-blue-600 text-xs font-bold px-2 py-1 rounded flex items-center">
+                                    <i class="fas fa-gas-pump mr-1"></i> 20-25 km/liter
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 class="text-xl font-bold text-gray-800">Daihatsu Ayla</h3>
+                                    <span class="bg-blue-100 text-blue-600 text-xs font-semibold px-2 py-1 rounded">B
+                                        7890 MNO</span>
+                                </div>
+
+                                <div class="flex items-center mb-4">
+                                    <div class="flex text-yellow-400 mr-2">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="text-gray-600 text-sm">4.0 (76 review)</span>
+                                </div>
+
+                                <div class="grid grid-cols-2 gap-4 mb-4">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-users text-gray-500 mr-2"></i>
+                                        <span class="text-gray-700">5 Kursi</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-car text-gray-500 mr-2"></i>
+                                        <span class="text-gray-700">Manual</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-snowflake text-gray-500 mr-2"></i>
+                                        <span class="text-gray-700">AC</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-bluetooth text-gray-500 mr-2"></i>
+                                        <span class="text-gray-700">Audio</span>
+                                    </div>
+                                </div>
+
+                                <div class="border-t border-gray-200 pt-4 mt-4">
+                                    <div class="flex justify-between items-center">
+                                        <div>
+                                            <div class="text-xl font-bold text-blue-600">Rp250.000<span
+                                                    class="text-sm font-normal text-gray-600">/hari</span></div>
+                                        </div>
+                                        <button
+                                            class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300 rent-btn"
+                                            data-id="5" data-name="Daihatsu Ayla" data-price="250000">
+                                            Sewa Sekarang
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Vehicle 6 -->
+                        <div class="vehicle-card bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
+                            data-category="family">
+                            <div class="relative">
+                                <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                                    alt="Suzuki Ertiga" class="w-full h-48 object-cover">
+                                <div
+                                    class="absolute top-4 right-4 bg-white text-blue-600 text-xs font-bold px-2 py-1 rounded flex items-center">
+                                    <i class="fas fa-gas-pump mr-1"></i> 16-18 km/liter
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 class="text-xl font-bold text-gray-800">Suzuki Ertiga</h3>
+                                    <span class="bg-blue-100 text-blue-600 text-xs font-semibold px-2 py-1 rounded">B
+                                        1234 PQR</span>
+                                </div>
+
+                                <div class="flex items-center mb-4">
+                                    <div class="flex text-yellow-400 mr-2">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="text-gray-600 text-sm">4.4 (58 review)</span>
+                                </div>
+
+                                <div class="grid grid-cols-2 gap-4 mb-4">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-users text-gray-500 mr-2"></i>
+                                        <span class="text-gray-700">7 Kursi</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-car text-gray-500 mr-2"></i>
+                                        <span class="text-gray-700">Automatic</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-snowflake text-gray-500 mr-2"></i>
+                                        <span class="text-gray-700">AC</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-bluetooth text-gray-500 mr-2"></i>
+                                        <span class="text-gray-700">Audio</span>
+                                    </div>
+                                </div>
+
+                                <div class="border-t border-gray-200 pt-4 mt-4">
+                                    <div class="flex justify-between items-center">
+                                        <div>
+                                            <div class="text-xl font-bold text-blue-600">Rp300.000<span
+                                                    class="text-sm font-normal text-gray-600">/hari</span></div>
+                                        </div>
+                                        <button
+                                            class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300 rent-btn"
+                                            data-id="6" data-name="Suzuki Ertiga" data-price="300000">
+                                            Sewa Sekarang
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Vehicle cards will be populated by JavaScript -->
+            </div>
+
+            <div class="text-center mt-10">
+                <button id="loadMore"
+                    class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300 font-medium">
+                    Muat Lebih Banyak
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Cara Memesan</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Hanya 3 langkah mudah untuk menyewa mobil</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div
+                    class="bg-gray-50 p-8 rounded-xl text-center hover:shadow-md transition duration-300 animate__animated animate__fadeIn">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-blue-600 text-2xl font-bold">1</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Pilih Mobil</h3>
+                    <p class="text-gray-600">Temukan mobil yang sesuai dengan kebutuhan Anda dari koleksi armada kami.
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl text-center hover:shadow-md transition duration-300 animate__animated animate__fadeIn"
+                    data-wow-delay="0.2s">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-blue-600 text-2xl font-bold">2</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Isi Formulir</h3>
+                    <p class="text-gray-600">Lengkapi data peminjaman dan informasi pribadi Anda.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl text-center hover:shadow-md transition duration-300 animate__animated animate__fadeIn"
+                    data-wow-delay="0.4s">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-blue-600 text-2xl font-bold">3</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Konfirmasi Pembayaran</h3>
+                    <p class="text-gray-600">Lakukan pembayaran dan mobil siap untuk Anda gunakan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-16 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-4 animate__animated animate__fadeInDown">Apa Kata Pelanggan Kami</h2>
+            <p class="text-xl opacity-90 max-w-2xl mx-auto animate__animated animate__fadeInUp">Testimoni dari pelanggan yang telah menggunakan layanan kami</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Testimonial 1 -->
+            <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm border border-white border-opacity-20 hover:border-opacity-40 transition-all duration-300 animate__animated animate__fadeInUp">
+                <div class="flex items-center mb-4">
+                    <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-white mr-4">
+                        <img src="img/profil(9).jpeg" 
+                             alt="Andi Setiawan" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h4 class="font-semibold">Dea</h4>
+                        <div class="flex text-yellow-400 text-sm mt-1">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-blue-100 italic mb-4">"Pelayanan sangat memuaskan! Mobil bersih dan nyaman. Proses sewa cepat tanpa ribet. Pasti akan menggunakan jasa ini lagi."</p>
+                <div class="flex items-center text-blue-200 text-sm">
+                    <i class="fas fa-car mr-2"></i>
+                    <span>Toyota Avanza - 15 Jan 2023</span>
+                </div>
+            </div>
+            
+            <!-- Testimonial 2 -->
+            <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm border border-white border-opacity-20 hover:border-opacity-40 transition-all duration-300 animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                <div class="flex items-center mb-4">
+                    <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-white mr-4">
+                        <img src="img/profil(7).jpeg" 
+                             alt="Budi Darmawan" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h4 class="font-semibold">Siti</h4>
+                        <div class="flex text-yellow-400 text-sm mt-1">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-blue-100 italic mb-4">"Armadanya terawat baik dan harga kompetitif. Customer service ramah dan membantu. Pengalaman menyewa yang menyenangkan!"</p>
+                <div class="flex items-center text-blue-200 text-sm">
+                    <i class="fas fa-car mr-2"></i>
+                    <span>Honda Civic - 28 Feb 2023</span>
+                </div>
+            </div>
+            
+            <!-- Testimonial 3 -->
+            <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm border border-white border-opacity-20 hover:border-opacity-40 transition-all duration-300 animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                <div class="flex items-center mb-4">
+                    <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-white mr-4">
+                        <img src="img/profil(8).jpeg" 
+                             alt="Citra Wijaya" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h4 class="font-semibold">Badriah</h4>
+                        <div class="flex text-yellow-400 text-sm mt-1">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-blue-100 italic mb-4">"Sangat recommended! Mobil seperti baru, full tank bensin, dan dapat harga spesial. Proses pengembalian juga mudah dan cepat."</p>
+                <div class="flex items-center text-blue-200 text-sm">
+                    <i class="fas fa-car mr-2"></i>
+                    <span>Mitsubishi Pajero - 10 Mar 2023</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Testimonial Carousel for Mobile -->
+        <div class="mt-8 md:hidden">
+            <div class="testimonial-carousel swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Testimonial Slide 1 -->
+                    <div class="swiper-slide bg-white bg-opacity-10 p-6 rounded-lg backdrop-blur-sm border border-white border-opacity-20">
+                        <div class="flex items-center mb-4">
+                            <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-white mr-4">
+                                <img src="img/profil(9).jpeg" 
+                                     alt="Rina Kusuma" 
+                                     class="w-full h-full object-cover">
+                            </div>
+                                 <h4 class="font-semibold">Rina Kusuma</h4>
+                                <div class="flex text-yellow-400 text-sm mt-1">
+                                    <i class="fas fa-star"></i>
+                                <div>
+                               <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-blue-100 italic mb-4">"Pertama kali sewa mobil di sini dan sangat puas. Mobil bersih, AC dingin, dan dapat harga murah. Terima kasih!"</p>
+                        <div class="flex items-center text-blue-200 text-sm">
+                            <i class="fas fa-car mr-2"></i>
+                            <span>Toyota Alphard - 5 Apr 2023</span>
+                        </div>
+                    </div>
+                    
+            
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-12">
+            <button class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition duration-300 inline-flex items-center animate__animated animate__pulse animate__infinite">
+                <i class="fas fa-comment-alt mr-2"></i> Beri Testimoni Anda
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript for Testimonials -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize carousel for mobile
+    if (window.innerWidth < 768) {
+        const testimonialCarousel = new Swiper('.testimonial-carousel', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+    }
+    
+    // Animation on scroll
+    const testimonialItems = document.querySelectorAll('#testimonials .animate__fadeInUp');
+    
+    function animateOnScroll() {
+        testimonialItems.forEach(item => {
+            const itemPosition = item.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.2;
+            
+            if (itemPosition < screenPosition) {
+                item.classList.add('animate__fadeInUp');
+            }
+        });
+    }
+    
+    window.addEventListener('scroll', animateOnScroll);
+    animateOnScroll(); // Run once on page load
+    
+    // Pulse animation for CTA button
+    const ctaButton = document.querySelector('#testimonials button');
+    let pulseInterval = setInterval(() => {
+        ctaButton.classList.toggle('animate__pulse');
+    }, 2000);
+    
+    ctaButton.addEventListener('mouseenter', function() {
+        clearInterval(pulseInterval);
+        this.classList.remove('animate__pulse');
+    });
+    
+    ctaButton.addEventListener('mouseleave', function() {
+        this.classList.add('animate__pulse');
+        pulseInterval = setInterval(() => {
+            this.classList.toggle('animate__pulse');
+        }, 2000);
+    });
+});
+</script>
+
+    <!-- Booking Section -->
+    <section id="booking" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-blue-600 text-white p-8 md:p-12">
+                        <h2 class="text-3xl font-bold mb-6">Pesan Mobil Sekarang</h2>
+                        <p class="text-lg mb-8">Isi formulir pemesanan dan kami akan menghubungi Anda untuk konfirmasi
+                            lebih lanjut.</p>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <i class="fas fa-check-circle text-xl text-blue-200"></i>
+                                </div>
+                                <p class="ml-3 text-blue-100">Proses cepat dan mudah</p>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <i class="fas fa-check-circle text-xl text-blue-200"></i>
+                                </div>
+                                <p class="ml-3 text-blue-100">Harga transparan tanpa biaya tersembunyi</p>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 mt-1">
+                                    <i class="fas fa-check-circle text-xl text-blue-200"></i>
+                                </div>
+                                <p class="ml-3 text-blue-100">Armada terawat dan bersih</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-8 md:p-12">
+                        <form id="bookingForm" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-2">Nama Lengkap</label>
+                                <input type="text" id="name" name="name"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                    required>
+                            </div>
+                            <div>
+                                <label for="ktp" class="block text-gray-700 font-medium mb-2">Nomor KTP</label>
+                                <input type="text" id="ktp" name="ktp"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                    required>
+                            </div>
+                            <div>
+                                <label for="purpose" class="block text-gray-700 font-medium mb-2">Keperluan</label>
+                                <select id="purpose" name="purpose"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                    required>
+                                    <option value="">Pilih Keperluan</option>
+                                    <option value="liburan">Liburan</option>
+                                    <option value="bisnis">Bisnis</option>
+                                    <option value="keluarga">Keluarga</option>
+                                    <option value="lainnya">Lainnya</option>
+                                </select>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="start_date" class="block text-gray-700 font-medium mb-2">Tanggal
+                                        Mulai</label>
+                                    <input type="date" id="start_date" name="start_date"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                        required>
+                                </div>
+                                <div>
+                                    <label for="end_date" class="block text-gray-700 font-medium mb-2">Tanggal
+                                        Selesai</label>
+                                    <input type="date" id="end_date" name="end_date"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                        required>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="vehicle" class="block text-gray-700 font-medium mb-2">Pilih
+                                    Kendaraan</label>
+                                <select id="vehicle" name="vehicle"
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                    required>
+                                    <option value="">Pilih Kendaraan</option>
+                                    <option value="">Honda Civic Turbo</option>
+                                    <option value="">Toyota Avanza</option>
+                                    <option value="">Mitsubishi Pajero Sport</option>
+                                    <option value="">Toyota Alphard</option>
+                                    <option value="">Daihatsu Alya</option>
+                                    <option value="">Suzuki Ertiga</option>
+                                    <!-- Vehicle options will be populated by JavaScript -->
+                                </select>
+                            </div>
+                            <div>
+                                <button type="submit"
+                                    class="w-full bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">
+                                    Pesan Sekarang
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Developer Profile Section -->
+    <section id="developer" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Tim Pengembang Kami</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Profesional di balik kesuksesan DB Rental Mobil</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+                <!-- Developer Frame 1 -->
+                <div
+                    class="group bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-500 transform hover:-translate-y-2 animate__animated animate__fadeIn">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="img/profil(1).jpeg" alt="Frontend Developer"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <h3 class="text-xl font-bold text-white">Tri Rahmat Subhan</h3>
+                            <p class="text-blue-200">0110124118</p>
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <div class="flex justify-center space-x-2 mb-3">
+                            <i class="fab fa-html5 text-orange-500"></i>
+                            <i class="fab fa-css3-alt text-blue-500"></i>
+                            <i class="fab fa-js text-yellow-400"></i>
+                        </div>
+                        <p class="text-gray-600">Spesialis dalam membangun antarmuka pengguna yang menarik dan
+                            responsif.</p>
+                    </div>
+                </div>
+
+                <!-- Developer Frame 2 -->
+                <div class="group bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-500 transform hover:-translate-y-2 animate__animated animate__fadeIn"
+                    data-wow-delay="0.1s">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="img/profil(2).jpeg"
+                            alt="UI/UX Designer"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <h3 class="text-xl font-bold text-white">nailah husna tuada</h3>
+                            <p class="text-blue-200">0110124157</p>
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <div class="flex justify-center space-x-2 mb-3">
+                            <i class="fas fa-paint-brush text-purple-500"></i>
+                            <i class="fab fa-figma text-pink-500"></i>
+                            <i class="fas fa-mobile-alt text-blue-400"></i>
+                        </div>
+                        <p class="text-gray-600">Menciptakan pengalaman pengguna yang intuitif dan desain yang memukau.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Developer Frame 3 -->
+                <div class="group bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-500 transform hover:-translate-y-2 animate__animated animate__fadeIn"
+                    data-wow-delay="0.2s">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="img/profil(3).jpeg" alt="Backend Developer"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <h3 class="text-xl font-bold text-white">Shepia Inayatul</h3>
+                            <p class="text-blue-200">0110124257</p>
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <div class="flex justify-center space-x-2 mb-3">
+                            <i class="fab fa-node-js text-green-500"></i>
+                            <i class="fas fa-database text-blue-600"></i>
+                            <i class="fas fa-server text-gray-600"></i>
+                        </div>
+                        <p class="text-gray-600">Membangun sistem backend yang kuat dan skalabel untuk aplikasi.</p>
+                    </div>
+                </div>
+
+                <!-- Developer Frame 4 -->
+                <div class="group bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-500 transform hover:-translate-y-2 animate__animated animate__fadeIn"
+                    data-wow-delay="0.3s">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="img/profil(6).jpeg"
+                            alt="Database Specialist"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <h3 class="text-xl font-bold text-white">Dea Siti Badriah</h3>
+                            <p class="text-blue-200">0110124008</p>
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <div class="flex justify-center space-x-2 mb-3">
+                            <i class="fas fa-database text-blue-500"></i>
+                            <i class="fas fa-cloud text-blue-300"></i>
+                            <i class="fas fa-shield-alt text-green-500"></i>
+                        </div>
+                        <p class="text-gray-600">Mengoptimalkan dan mengamankan sistem database untuk performa maksimal.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Developer Frame 5 -->
+                <div class="group bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-500 transform hover:-translate-y-2 animate__animated animate__fadeIn"
+                    data-wow-delay="0.4s">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="img/profil(5).jpeg"
+                            alt="Project Manager"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+                        <div class="absolute bottom-0 left-0 p-4">
+                            <h3 class="text-xl font-bold text-white">M. Naufal Aziz</h3>
+                            <p class="text-blue-200">0110124194</p>
+                        </div>
+                    </div>
+                    <div class="p-6 text-center">
+                        <div class="flex justify-center space-x-2 mb-3">
+                            <i class="fas fa-tasks text-indigo-500"></i>
+                            <i class="fas fa-users text-blue-400"></i>
+                            <i class="fas fa-chart-line text-green-500"></i>
+                        </div>
+                        <p class="text-gray-600">Memastikan proyek berjalan lancar dan sesuai dengan kebutuhan klien.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white pt-12 pb-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">DB Rental Mobil</h3>
+                    <p class="text-gray-400">Layanan rental mobil terpercaya dengan armada terawat dan harga kompetitif.
+                    </p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="subhann15_" class="text-gray-400 hover:text-white transition"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="Tri Rahmat Subhan" class="text-gray-400 hover:text-white transition"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Tautan Cepat</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#vehicles" class="text-gray-400 hover:text-white transition">Armada</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition">Testimoni</a></li>
+                        <li><a href="#booking" class="text-gray-400 hover:text-white transition">Pesan</a></li>
+                        <li><a href="#developer" class="text-gray-400 hover:text-white transition">Pengembang</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Kontak Kami</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                            <span>Jl. Contoh No. 123, Jakarta</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-3"></i>
+                            <span>(+62) 8838-8487-890</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3"></i>
+                            <span>info@dbrentalmobil.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Jam Operasional</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex justify-between">
+                            <span>Senin - Jumat</span>
+                            <span>08:00 - 17:00</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Sabtu</span>
+                            <span>09:00 - 15:00</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Minggu</span>
+                            <span>Libur</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+                <p>&copy; 2025 DB Rental Mobil. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop"
+        class="fixed bottom-6 right-6 bg-blue-600 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-blue-700">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Booking Success Modal -->
+    <div id="successModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-xl p-8 max-w-md w-full mx-4 animate__animated animate__fadeInDown">
+            <div class="text-center">
+                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-check text-green-500 text-2xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-2">Pemesanan Berhasil!</h3>
+                <p class="text-gray-600 mb-6">Terima kasih telah memesan di DB Rental Mobil. Kami akan segera
+                    menghubungi Anda untuk konfirmasi lebih lanjut.</p>
+                <button id="closeModal"
+                    class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300">Tutup</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
